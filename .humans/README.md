@@ -4,7 +4,7 @@ A [Claude Code](https://claude.ai/code) plugin that keeps your project documenta
 
 ## The Problem
 
-Claude Code works from `CLAUDE.md` as its primary project context, but nothing ensures it stays accurate as the codebase evolves. Requirements drift, mental models go stale, and conventions change without the docs catching up.
+Claude Code works from `CLAUDE.md` as its primary project context — requirements and mental models are the most critical sections because they shape every decision Claude makes. But nothing ensures they stay accurate as the codebase evolves. Requirements drift, mental models go stale, and conventions change without the docs catching up. The result: Claude works from assumptions that no longer match reality.
 
 ## The Solution
 

@@ -1,6 +1,8 @@
 # req-mod-sync
 
-Claude Code plugin. Stop hook that prompts you to keep `CLAUDE.md` up to date after every response.
+Claude Code plugin that keeps your project's requirements and mental model up to date in `CLAUDE.md`.
+
+Requirements and mental models are critical to track — they're the context Claude works from on every task. When they drift, Claude makes decisions based on stale assumptions. This plugin catches that drift automatically.
 
 ## Install
 

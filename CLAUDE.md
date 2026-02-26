@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-A Claude Code plugin containing a single Stop hook. Every time Claude finishes a response, the hook blocks the stop and asks Claude to check whether `CLAUDE.md` in the target project needs updating — specifically the `## Requirements`, `## Mental Model`, and general working-in-this-system sections. If nothing needs updating, Claude replies with `0` and stops.
+A Claude Code plugin that keeps a project's requirements and mental model up to date in `CLAUDE.md`.
+
+Requirements and mental models are critical to track — they're the context Claude works from on every task. If they drift from reality, Claude makes decisions based on stale assumptions. This plugin prevents that by running a Stop hook after every response, blocking the stop to ask Claude whether `## Requirements`, `## Mental Model`, or general working-in-this-system sections of `CLAUDE.md` need updating. If nothing needs updating, Claude replies with `0` and stops.
 
 ## Architecture
 
