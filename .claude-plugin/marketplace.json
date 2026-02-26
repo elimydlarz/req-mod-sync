@@ -1,0 +1,13 @@
+{
+  "name": "req-mod-sync",
+  "owner": {
+    "name": "Eli Mydlarz"
+  },
+  "plugins": [
+    {
+      "name": "req-mod-sync",
+      "source": "./",
+      "description": "Stop hook that prompts Claude to keep CLAUDE.md requirements and mental model up to date"
+    }
+  ]
+}

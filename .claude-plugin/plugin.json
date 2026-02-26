@@ -1,0 +1,6 @@
+{
+  "name": "req-mod-sync",
+  "description": "Stop hook that prompts Claude to keep CLAUDE.md requirements and mental model up to date",
+  "version": "1.0.0",
+  "hooks": "./hooks/hooks.json"
+}
