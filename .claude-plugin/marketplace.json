@@ -7,7 +7,7 @@
     {
       "name": "req-mod-sync",
       "source": "./",
-      "description": "Stop hook that prompts Claude to keep CLAUDE.md requirements and mental model up to date"
+      "description": "Stop hook that prompts Claude to keep CLAUDE.md requirements, mental model, and repo map up to date"
     }
   ]
 }

@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A Claude Code plugin that keeps a project's requirements and mental model up to date in `CLAUDE.md`.
 
-Requirements and mental models are critical to track — they're the context Claude works from on every task. If they drift from reality, Claude makes decisions based on stale assumptions. This plugin prevents that by running a Stop hook after every response, blocking the stop to ask Claude whether `## Requirements`, `## Mental Model`, or general working-in-this-system sections of `CLAUDE.md` need updating. If nothing needs updating, Claude replies with `0` and stops.
+Requirements, mental models, and repo maps are critical to track — they're the context Claude works from on every task. If they drift from reality, Claude makes decisions based on stale assumptions. This plugin prevents that by running a Stop hook after every response, blocking the stop to ask Claude whether `## Requirements`, `## Mental Model`, `## Repo Map`, or general working-in-this-system sections of `CLAUDE.md` need updating. If nothing needs updating, Claude replies with `0` and stops.
 
 ## Architecture
 
@@ -18,6 +18,17 @@ This repo serves as both a plugin and its own marketplace (so it can be installe
 - `.claude/settings.json` — enables the plugin for this project (dogfooding)
 
 The hook logic: read JSON from stdin, check `stop_hook_active` to prevent infinite loops (exit 0 if true), otherwise emit the review prompt to stderr and exit 2 (which blocks the stop and feeds the message back to Claude).
+
+## Dogfooding
+
+This project uses itself. After changing hook logic, reinstall so the running session picks up the new hook:
+
+```sh
+claude plugin uninstall req-mod-sync@req-mod-sync
+claude plugin install req-mod-sync@req-mod-sync --scope project
+```
+
+Then restart Claude Code.
 
 ## Dependencies
 
