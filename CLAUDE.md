@@ -33,7 +33,7 @@ Then restart Claude Code.
 ## Repo Map
 
 - `CLAUDE.md` — project instructions and context for Claude Code
-- `.claude-plugin/plugin.json` — plugin manifest (name, description, version, hooks path)
+- `.claude-plugin/plugin.json` — plugin manifest (name, description, version)
 - `.claude-plugin/marketplace.json` — marketplace manifest for `claude plugin install` (self-referencing)
 - `hooks/hooks.json` — Stop hook definition with inline shell command
 - `.claude/settings.json` — project settings enabling the plugin (dogfooding)
