@@ -12,7 +12,7 @@ Requirements, mental models, and repo maps are critical to track — they're the
 
 This repo serves as both a plugin and its own marketplace (so it can be installed via `claude plugin install`).
 
-- `.claude-plugin/plugin.json` — plugin manifest, points to `./hooks/hooks.json`
+- `.claude-plugin/plugin.json` — plugin manifest (name, description, version)
 - `.claude-plugin/marketplace.json` — marketplace manifest, lists this plugin with `source: "./"` (self-referencing)
 - `hooks/hooks.json` — the Stop hook definition, inline shell command
 - `.claude/settings.json` — enables the plugin for this project (dogfooding)
