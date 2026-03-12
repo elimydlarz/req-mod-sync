@@ -7,7 +7,7 @@ Requirements, mental models, and repo maps are critical to track — they're the
 ## Install
 
 ```sh
-claude plugin marketplace add https://github.com/susu-eng/req-mod-sync
+claude plugin marketplace add https://github.com/elimydlarz/req-mod-sync
 claude plugin install req-mod-sync@susu-eng --scope project
 ```
 
