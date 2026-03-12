@@ -13,7 +13,7 @@ Requirements, mental models, and repo maps are critical to track — they're the
 This repo serves as both a plugin and its own marketplace (so it can be installed via `claude plugin install`).
 
 - `.claude-plugin/plugin.json` — plugin manifest (name, description, version)
-- `.claude-plugin/marketplace.json` — marketplace manifest (name: `susu-eng`), lists this plugin with `source: "./"` (self-referencing). The marketplace name intentionally differs from the plugin name to avoid ENAMETOOLONG cache path collision.
+- `.claude-plugin/marketplace.json` — marketplace manifest (name: `susu-eng`), lists this plugin with `source: "./"` (self-referencing). The marketplace name intentionally differs from the plugin name to avoid ENAMETOOLONG cache path collision. Note: this collides with `trunk-sync` which also uses marketplace name `susu-eng` — only one can be registered at a time. Needs resolving (either different marketplace names or a shared marketplace repo).
 - `hooks/hooks.json` — the Stop hook definition, inline shell command
 - `.claude/settings.json` — enables the plugin for this project (dogfooding)
 
