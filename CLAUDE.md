@@ -24,8 +24,8 @@ The hook logic: read JSON from stdin, check `stop_hook_active` to prevent infini
 This project uses itself. After changing hook logic, reinstall so the running session picks up the new hook:
 
 ```sh
-claude plugin uninstall req-mod-sync@req-mod-sync
-claude plugin install req-mod-sync@req-mod-sync --scope project
+claude plugin uninstall req-mod-sync@susu-eng
+claude plugin install req-mod-sync@susu-eng --scope project
 ```
 
 Then restart Claude Code.
@@ -37,6 +37,8 @@ Then restart Claude Code.
 - `.claude-plugin/marketplace.json` — marketplace manifest for `claude plugin install` (self-referencing)
 - `hooks/hooks.json` — Stop hook definition with inline shell command
 - `.claude/settings.json` — project settings enabling the plugin (dogfooding)
+- `README.md` — install/usage docs (for Claude and GitHub)
+- `.humans/README.md` — human-oriented README with problem/solution framing
 
 ## Dependencies
 

@@ -7,11 +7,11 @@ Requirements, mental models, and repo maps are critical to track — they're the
 ## Install
 
 ```sh
-claude plugin marketplace add https://github.com/elimydlarz/req-mod-sync
-claude plugin install req-mod-sync@req-mod-sync --scope project
+claude plugin marketplace add https://github.com/susu-eng/req-mod-sync
+claude plugin install req-mod-sync@susu-eng --scope project
 ```
 
-This adds `"req-mod-sync@req-mod-sync": true` to the target project's `.claude/settings.json`. Commit that file to share with your team.
+This adds `"req-mod-sync@susu-eng": true` to the target project's `.claude/settings.json`. Commit that file to share with your team.
 
 Restart Claude Code after installing.
 
@@ -29,5 +29,5 @@ Update whichever need it. If none, reply only with `0`.
 ## Uninstall
 
 ```sh
-claude plugin uninstall req-mod-sync@req-mod-sync
+claude plugin uninstall req-mod-sync@susu-eng
 ```

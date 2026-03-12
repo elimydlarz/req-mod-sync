@@ -21,8 +21,8 @@ If nothing needs updating, Claude says `0` and moves on. If something's out of d
 Requires [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) and `jq`.
 
 ```sh
-claude plugin marketplace add https://github.com/elimydlarz/req-mod-sync
-claude plugin install req-mod-sync@req-mod-sync --scope project
+claude plugin marketplace add https://github.com/susu-eng/req-mod-sync
+claude plugin install req-mod-sync@susu-eng --scope project
 ```
 
 Restart Claude Code after installing. The `--scope project` flag writes to `.claude/settings.json` in your project, which you can commit to share with your team.
@@ -40,5 +40,5 @@ That's the entire plugin. You can read the full hook in [`hooks/hooks.json`](hoo
 ## Uninstall
 
 ```sh
-claude plugin uninstall req-mod-sync@req-mod-sync
+claude plugin uninstall req-mod-sync@susu-eng
 ```
