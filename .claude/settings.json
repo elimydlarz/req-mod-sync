@@ -1,5 +1,15 @@
 {
   "enabledPlugins": {
-    "trunk-sync@trunk-sync": true
+    "trunk-sync@trunk-sync": true,
+    "req-mod-sync@susu-eng": true,
+    "trunk-sync@susu-eng": true
+  },
+  "extraKnownMarketplaces": {
+    "susu-eng": {
+      "source": {
+        "source": "github",
+        "repo": "elimydlarz/trunk-sync"
+      }
+    }
   }
 }
